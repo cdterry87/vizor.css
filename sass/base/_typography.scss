@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font-size: 2rem;
+  font-size: $default-font-size;
 }
 
 h1,
@@ -64,4 +64,8 @@ h7,
 
 .underline {
   text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }

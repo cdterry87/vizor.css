@@ -3,7 +3,6 @@
   &:link,
   &:visited {
     margin: .25rem .5rem;
-    text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
     padding: .8rem 2.4rem;
@@ -11,6 +10,7 @@
     position: relative;
     border: none;
     cursor: pointer;
+    font-size: $default-font-size;
   }
 
   &:hover {
