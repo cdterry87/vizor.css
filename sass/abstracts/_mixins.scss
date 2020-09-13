@@ -1,0 +1,22 @@
+$sm: 30em;
+$md: 45em;
+$lg: 60em;
+$xl: 75em;
+
+@mixin responsive($bp) {
+    @if $bp == sm {
+        @media only screen and (min-width: $sm) { @content }; // (480 / 16)
+    }
+
+    @if $bp == md {
+        @media only screen and (max-width: $md) { @content }; // (720 / 16)
+    }
+
+    @if $bp == lg {
+        @media only screen and (max-width: $lg) { @content }; // (960 / 16)
+    }
+
+    @if $bp == xl {
+        @media only screen and (min-width: $xl) { @content }; // (1200px / 16)
+    }
+}
